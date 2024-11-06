@@ -15,10 +15,6 @@
     "format": "prettier --write \"{src,test}/**/*.ts\"",
     "format-check": "prettier --check \"{src,test}/**/*.ts\""
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Wh1msicaly/youtube-chat.git"
-  },
   "files": [
     "dist/**/*.js",
     "dist/**/*.d.ts"

@@ -25,7 +25,11 @@ export async function fetchLivePage(id: { channelId: string } | { liveId: string
   if (!url) {
     throw TypeError("not found id")
   }
-  const res = await axios.get(url)
+  const res = await axios.get(url, {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36'   
+    }
+  }) // Chaning the user-agent should fix issues?!S
   return getOptionsFromLivePage(res.data.toString())
 }
 

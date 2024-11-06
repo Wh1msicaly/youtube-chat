@@ -3,7 +3,7 @@
   "version": "2.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/Wh1msicaly/youtube-chat.git#develop",
+  "repository": "https://github.com/Wh1msicaly/youtube-chat.git",
   "license": "MIT",
   "private": false,
   "scripts": {
